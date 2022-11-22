@@ -2,7 +2,7 @@
 using OpenTelemetry;
 using OpenTelemetry.Trace;
 
-namespace TraceTest
+namespace Synchronous
 {
 	public class Program
 	{
@@ -24,7 +24,7 @@ namespace TraceTest
 				// When i > 60 the root span does not appear in New Relic
 				for (int i = 0; i < 65; i++)
 				{
-					using (source.StartActivity($"child {i}"))
+					using (source.StartActivity($"child {i:00}"))
 					{
 						Console.WriteLine(i);
 						Thread.Sleep(TimeSpan.FromMinutes(1));
