@@ -13,18 +13,18 @@ gantt
     axisFormat %H:%M
 
     section Working
-    Root (missing) : 00:00, 55min
-    C1             : 00:00, 1min
-    C2             : 00:01, 1min
-    "..."          : 00:02, 52min
-    Cn             : 00:54, 1min
+    Root (missing) : 00:00, 55m
+    C1             : 00:00, 1m
+    C2             : 00:01, 1m
+    "..."          : 00:02, 52m
+    Cn             : 00:54, 1m
 
     section Not Working
-    Root (missing) :crit, 00:00, 65min
-    C1             :      00:00, 1min
-    C2             :      00:01, 1min
-    "..."          :      00:02, 62min
-    Cn             :      01:04, 1min
+    Root (missing) :crit, 00:00, 65m
+    C1             :      00:00, 1m
+    C2             :      00:01, 1m
+    "..."          :      00:02, 62m
+    Cn             :      01:04, 1m
 ```
 
 ## Asynchronous
@@ -40,10 +40,10 @@ gantt
     axisFormat %M:%S
 
     section Working
-    Root                     :      00:00, 30sec
-    C1                       :      09:30, 30sec
+    Root                     :      00:00, 30s
+    C1                       :      09:30, 30s
 
     section Not Working
-    Root                     :      00:00, 30sec
-    C1 (missing in trace ui) :crit, 10:30, 30sec
+    Root                     :      00:00, 30s
+    C1 (missing in trace ui) :crit, 10:30, 30s
 ```
